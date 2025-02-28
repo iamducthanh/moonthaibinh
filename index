@@ -1,1 +1,23 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <script>
+        fetch("https://script.google.com/macros/s/AKfycbxzxM8fDtgo8AVOAmtBxbA_ZXWUqFFMKNT7lLGbX1dz6TW_3roDZQNXJ7foBF14Aw8cHw/exec")
+            .then(response => response.json()) // Chuyển dữ liệu về JSON
+            .then(data => {
+                console.log("Dữ liệu từ API:", data);
+            })
+            .catch(error => console.error("Lỗi:", error));
+
+    </script>
+</body>
+
+</html>
